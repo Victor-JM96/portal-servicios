@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Servicios Ciudadanos</title>
+    <link rel="stylesheet" href="assets/css/estilos.css"/>
+</head>
+<body>
+    <a class="soltar" href="#contenido">Saltar al contenido principal</a>
+    <!--Encabezado-->
+    <header>
+        <h1>Portal de Servicios Ciudadanos</h1>
+        <p>Bienvenido al Portal de Servicios Ciudadanos</p>
+    </header>
+    <!--Barra de navegación-->
+    <nav class="navegacion" aria-label="Navegación Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#requisitos">Requisitos</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto-citas">Contacto o Citas</a>
+    </nav>
+    <!--Contenido principal-->
+    <main id="contenido" class="contenido">
+        <!--Servicios-->
+        <section id="servicios" class="servicio" aria-labelledby=""titulo-servicio">
+            <article class="tarjeta-servico">
+                <img src="assets/img/images.jpg" alt="Icono de una licencia de conducir" class="icono-servicio"/>
+                <div>
+                    <h2 id="titulo-servicio">Licencia de Conducir</h2>
+                    <p>Obtén tu licencia de conducir con los requisitos necesarios.</p>
+                    <a class="boton" href="requisitos">Consultar Requisitos</a>
+                </div>
+            </article>
+        </section>
+        <!--Requisitos-->
+        <section id="requisitos" class="seccion-alterna"
+        aria-labelledby="titulo-requisitos">
+        <h2 id="titulo-requisitos">Requisitos para Licencia de Conducir</h2>
+        <ul>
+            <li>Ser mayor de edad.</li>
+            <li>Presentar identificación oficial (INE o pasaporte).</li>
+            <li>CURP (Clave Única de Registro de Población).</li>
+            <li>Comprobante de domicilio (original y copia).</li>
+            <li>Examen médico aprobado.</li>
+            <li>Pago de derechos correspondiente.</li>
+        </ul>
+        </section>
+        <!--Ubicación-->
+        <section id="ubicacion" class="seccion" aria-labelledby="titulo-ubicacion">
+            <h2 id="titulo-ubicacion">Ubicación</h2>
+            <address>
+                <p>Av. Principal 123, Ciudad</p>
+                <p>Teléfono: (55) 1234-5678</p>
+            </address>
+            <P><strong>Horarios de atención:</strong> Lunes a Viernes de 09:00 a 17:00 horas</P>
+            <a id="citas" href="citas">Ir a solicitud de cita</a>
+        </section>
+        <!-- Citas -->
+         <section id="citas" class="seccion seccion-alterna" aria-labelledby="titulo-citas">
+            <h2 id="titulo-citas">Solicitud de Citas</h2>
+            <p> <strong>Para solicitar una cita, por favor completa el siguiente formulario:</strong></p>
+            <form class="formulario" action="citas" method="get"> 
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input id="nombre" name="nombre" type="text" required/>
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input id="edad" name="edad" type="number" min="18" required/>
+                </div>
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input id="correo" name="correo" type="email" required/>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input id="telefono" name="telefono" type="tel" required/>
+                </div>
+                <div>
+                    <label for="fecha">Fecha de la cita:</label>
+                    <input id="fecha" name="fecha" type="date" required/>
+                </div>
+                <button class="boton" type="submit">Solicitar Cita</button>
+            </form>
+    </main>
+    <!--Pie de página-->
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Portal de Servicios Ciudadanos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
