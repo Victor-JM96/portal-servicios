@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de Servicios Ciudadanos</title>
-    <link rel="stylesheet" href="assets/css/estilos.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-    <a class="soltar" href="#contenido">Saltar al contenido principal</a>
+    <a class="saltar" href="#contenido">Saltar al contenido principal</a>
     <!--Encabezado-->
     <header>
         <h1>Portal de Servicios Ciudadanos</h1>
@@ -19,7 +19,7 @@
         <a href="#servicios">Servicios</a>
         <a href="#requisitos">Requisitos</a>
         <a href="#ubicacion">Ubicación</a>
-        <a href="#contacto-citas">Contacto o Citas</a>
+        <a href="#solicitud-citas">Solicitud de Citas</a>
     </nav>
     <!--Contenido principal-->
     <main id="contenido" class="contenido">
@@ -55,13 +55,13 @@
                 <p>Teléfono: (55) 1234-5678</p>
             </address>
             <P><strong>Horarios de atención:</strong> Lunes a Viernes de 09:00 a 17:00 horas</P>
-            <a id="citas" href="citas">Ir a solicitud de cita</a>
+            <a id="solicitud-citas" href="solicitud-citas">Solicitud de Citas</a>
         </section>
-        <!-- Citas -->
-         <section id="citas" class="seccion seccion-alterna" aria-labelledby="titulo-citas">
-            <h2 id="titulo-citas">Solicitud de Citas</h2>
+        <!-- Solicitud de Citas -->
+         <section id="solicitud-citas" class="seccion seccion-alterna" aria-labelledby="titulo-solicitud-citas">
+            <h2 id="titulo-solicitud-citas">Solicitud de Citas</h2>
             <p> <strong>Para solicitar una cita, por favor completa el siguiente formulario:</strong></p>
-            <form class="formulario" action="citas" method="get"> 
+            <form class="formulario" action="solicitud-citas" method="get"> 
                 <div>
                     <label for="nombre">Nombre completo:</label>
                     <input id="nombre" name="nombre" type="text" required/>
